@@ -1,0 +1,290 @@
+html
+  head
+style
+{@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');} 
+
+:root{
+    --main-color: red;
+    --second-color: rgb(225, 135, 24);
+    --text-color: black;
+    --gradient: linear-gradient( red, rgb(225, 135, 24))
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: seashell;
+    padding: 15px 50px;
+}
+.navbar{
+    display: flex;
+    height: 20px;
+
+}
+.navbar li{
+    position:relative;
+}
+.navbar a{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.nav-buttons{
+    align-items: flex-end;
+}
+.nav-buttons input{
+    border: 0.2rem, black;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;   
+}
+.nav-buttons button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.searchButton i{
+    font-size: 1rem;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #474fa0;
+    color: white;
+}
+.logoutButton{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: rgb(246, 45, 78);
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url('https://media.istockphoto.com/id/1133941870/photo/abstract-chaotic-background.jpg?s=612x612&w=0&k=20&c=l08QyN98cV9E2fMKIKnP1BW2GSgFkZUP7zbRSVlNHDM=');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0.5rem 0.1rem;
+}
+.app-stores img{
+    width: 200px;
+    margin-right: 1rem;
+}
+.form-container form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    background: wheat;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.input-box{
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-box span{
+    font-weight: 500;
+}
+.input-box input{
+    padding: 7px;
+    background: #dae3f5;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.form-container .form .button{
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.form-container .form .button:hover{
+    background: var(--main-color);
+}
+.heading{
+    text-align:center
+}
+.heading span{
+    font-weight: 500;
+}
+.heading h1{
+    font-size: 2rem;
+}
+.ride-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: wheat;
+}
+.ride-container .box{
+    text-align: center;
+    padding: 20px;
+}
+.ride-container .box .bx{
+    font-size: 43px;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+.ride-container .box h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.ride-container .box .bx:hover{
+    background: var(--gradient);
+    color: white
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.services-container span{
+    font-size: 20px;
+}
+.imageForm{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.imageForm textarea{
+    border: 0.5rem, black;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;     
+}
+.imageForm input{
+    border: 0.5rem, black;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;   
+}
+.imageForm .uploadButton{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #474fa0;
+    color: white;
+    margin-bottom: 15px;
+    display: flexbox;
+}
+.imageForm .uploadButton:hover{
+    background:var(--main-color)
+}
+.services-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.services-container .box .box.img{
+    margin-top: 15px;
+    width: 100px;
+    height: 200px;
+}
+.services-container .box .box.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: contain;
+    object-position: center;
+}
+.services-container .box .btn{
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color:#fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.services-container .box .btn:hover{
+    background:var(--main-color)
+}
+.added-images{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.added-images label{
+    align-items: center;
+}
+.contact-button {
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color:#fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    text-decoration: underline;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.rev-img{
+    width: 70px;
+    height: 70px;
+}
+.rev-img img{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+}
+.reviews-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.reviews-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.reviews-container .box .stars .bx{
+    color: var(--main-color);
+}

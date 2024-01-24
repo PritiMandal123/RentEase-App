@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RENTEASE APP </title>
+    <link rel="stylesheet" href="../stylesheet/stylelogin.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" id="registerForm">
+
+            <div class="login-form">
+                <h1> Create Your Account</h1>
+                <a href="#" class="logo"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQyHLesEkODjcQxAaZ0GyzYf3FWOfMlszFI7RjwkSR0ftDNdrQVrcwJXCTCOLinGeEro&usqp=CAU"></a>
+                <div class="input-box">
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" required autocomplete="off" placeholder="email@example.com">
+
+                </div>
+                <div class="input-box">
+                    <label for="password">Password : </label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">REGISTER</button>
+
+            </div>
+            <div class="Register">
+                <p>Already have an account? <a href="index.html">Login here</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+    <script src="firebase-config.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDppLVQlHkS6CI7oAWu7wx2bK4K5bbpEHU",
+            authDomain: "rentease-app-cabb4.firebaseapp.com",
+            projectId: "rentease-app-cabb4",
+            storageBucket: "rentease-app-cabb4.appspot.com",
+            messagingSenderId: "769916694225",
+            appId: "1:769916694225:web:5fa00e3301b25187095ff0",
+            measurementId: "G-PRT1JLJPK1"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+    </script>
+
+    <script src="registration.js"></script>
+
+
+</body>
+
+</html>
